@@ -9,7 +9,7 @@
     <keywords>native ui controls</keywords>
 
     <engines>
-        <engine name="cordova" version=">=4.0.0"/>
+        <engine name="cordova" version=">=3.7.0"/>
     </engines>
 
     <!-- ios -->
