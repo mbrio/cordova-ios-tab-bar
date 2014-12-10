@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="com.mymee.cordova.plugins.ios-tab-bar"
+        id="org.mbrio.cordova.plugins.tab-bar"
         version="1.0.0">
 
     <name>Tab Bar Plugin for Cordova iOS</name>
@@ -9,7 +9,7 @@
     <keywords>native ui controls</keywords>
 
     <engines>
-        <engine name="cordova" version=">=3.0.0"/>
+        <engine name="cordova" version=">=4.0.0"/>
     </engines>
 
     <!-- ios -->
