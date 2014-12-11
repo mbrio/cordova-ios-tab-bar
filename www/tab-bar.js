@@ -34,8 +34,9 @@ function TabBar() {
 /**
  * Create a native tab bar that can have tab buttons added to it which can respond to events.
  */
-TabBar.prototype.createTabBar = function () {
-    exec( null, null, this.serviceName, "createTabBar", [] );
+TabBar.prototype.createTabBar = function (options) {
+    if ( !options ) options = {};
+    exec( null, null, this.serviceName, "createTabBar", [ options ] );
 };
 
 /**
@@ -44,8 +45,8 @@ TabBar.prototype.createTabBar = function () {
  * - \c height integer indicating the height of the tab bar (default: \c 49)
  * - \c position specifies whether the tab bar will be placed at the \c top or \c bottom of the screen (default: \c bottom)
  */
-TabBar.prototype.showTabBar = function ( options ) {
-    if ( !options ) options = {'position': 'bottom'};
+TabBar.prototype.showTabBar = function (options) {
+    if ( !options ) options = {};
     exec( null, null, this.serviceName, "showTabBar", [ options ] );
 };
 

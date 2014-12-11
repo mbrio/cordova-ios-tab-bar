@@ -17,10 +17,7 @@
 #import <Cordova/CDVPlugin.h>
 
 @interface CDVTabBar : CDVPlugin <UITabBarDelegate> {
-	CGRect	originalWebViewBounds;
-	
-  UITabBar* tabBar;
-	NSMutableDictionary* tabBarItems;
+	UITabBar* tabBar;
 }
 
 #pragma mark - Properties
@@ -35,11 +32,5 @@
 /* Tab Bar methods
  */
 - (void)createTabBar:(CDVInvokedUrlCommand*)command;
-- (void)showTabBar:(CDVInvokedUrlCommand*)command;
-- (void)hideTabBar:(CDVInvokedUrlCommand*)command;
-- (void)showTabBarItems:(CDVInvokedUrlCommand*)command;
-- (void)createTabBarItem:(CDVInvokedUrlCommand*)command;
-- (void)updateTabBarItem:(CDVInvokedUrlCommand*)command;
-- (void)selectTabBarItem:(CDVInvokedUrlCommand*)command;
 
 @end
